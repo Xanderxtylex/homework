@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #e6eaf8;
+            padding: 40px;
+            color: #151b32;
+            text-align: center;
+            margin: 30px;
+            font-weight: bold;
+
+        }
+
+        .body {
+            background-color: #ffff;
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: 0px 8px 10px 0px #00000033;
+        }
+
+        .top {
+            display: flex;
+            gap: 20px;
+        }
+
+        span {
+            margin-left: 40px;
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: justify;
+
+        }
+
+        .box {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            background-color: #fbfcff;
+            border-radius: 20px;
+            padding: 20px;
+            width: 310px;
+
+        }
+
+        .box:hover {
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+            border: 2px solid lightgray;
+
+        }
+
+        .box1 {
+            grid-area: head1;
+        }
+
+        .box2 {
+            grid-area: head2;
+
+        }
+
+        .box3 {
+            grid-area: head3;
+        }
+
+        .box4 {
+            grid-area: foot1;
+        }
+
+        .box5 {
+            grid-area: foot2;
+        }
+
+        .box6 {
+            grid-area: foot3;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+                "head1 head2 head3"
+                "foot1 foot2 foot3";
+            gap: 30px;
+        }
+
+        .left {
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-top: 25px;
+            padding: 0px;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-top: -15px;
+            margin-bottom: -10px;
+            padding: 0px;
+        }
+
+        .right {
+            text-align: justify;
+        }
+
+        .head {
+            display: flex;
+            margin-left: 170px;
+            margin-top: 10px;
+            gap: 49px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .head span:hover {
+            border: none;
+            background-color: #849fff;
+            color: #f0f3ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: -20px;
+        }
+
+        .search {
+            height: 50px;
+
+            padding-left: 50px;
+            background: url("3844432_magnifier_search_zoom_icon.svg") no-repeat scroll 10px 7px;
+            background-size: 30px;
+        }
+
+        .tag1 {
+            display: flex;
+            gap: 15px;
+            margin-bottom: -20px;
+        }
+
+        p {
+            border: 1px solid lightgray;
+            cursor: pointer;
+            padding: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
+            border-radius: 20px;
+            color: rgb(91, 91, 255);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="body">
+            <h1>Users</h1>
+            <div class="top">
+                <div class="search-box">
+                    <input type="search" placeholder="Search users" class="search">
+                </div>
+                <div class="head">
+                    <span>Reputation</span>
+                    <span>New users</span>
+                    <span>Voters</span>
+                    <span>Editors</span>
+                    <span>Moderators</span>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="box box1">
+                    <img src="profile 3.jpg" alt="profile 1" class="pic-five left">
+
+                    <div class="right">
+                        <h2>Hyodou Issei</h2>
+                        <h4>Emperor, TX</h4>
+                        <!-- <div class="tag1">
+                        
+                        </div><div class="tag1">
+                        
+                        </div><div class="tag1">
+                        
+                        </div>-->
+                        <div class="tag1">
+
+                            <p>oppai</p>
+                            <p>gadgets</p>
+
+                            <p>pawn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box box2">
+                    <img src="profile 1.jpg" alt="profile 1" class="pic-one left ">
+
+                    <div class="right">
+                        <h2>Xander Xtylex</h2>
+                        <h4>Warrior, AL</h4>
+                        <div class="tag1">
+
+
+                            <p>anime</p>
+                            <p>gadgets</p>
+                        </div>
+                        <div class="tag1">
+
+                            <p>digital art</p>
+                            <p>technology</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="box box3">
+                    <img src="profile 4.jpg" alt="profile 1" class="pic-three left">
+                    <div class="right">
+                        <h2>Anos Voldigard</h2>
+                        <h4>Misfit, TX</h4>
+                        <div class="tag1">
+
+                            <p>king</p>
+                            <p>magic</p>
+                            <p>peace</p>
+
+                        </div>
+
+                        <div class="tag1">
+
+                            <p>war</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="box box4">
+                    <img src="profile 6.jpg" alt="profile 1" class="pic-four left">
+                    <div class="right">
+                        <h2>Rias Gremory</h2>
+                        <div class="tag1">
+
+                            <p>crimson red</p>
+                            <p>queen</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="box box5">
+                    <img src="picture2.jpeg" alt="profile 1" class="pic-two left">
+
+                    <div class="right">
+                        <h2>Eren Yeager</h2>
+                        <h4>Titan Shifter, OH</h4>
+                        <div class="tag1">
+                            <p>titans</p>
+                            <p>green</p>
+                        </div>
+                        <div class="tag1">
+
+                            <p>rumbling</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="box box6">
+                    <img src="profile 7.jpg" alt="profile 1" class="pic- left">
+                    <div class="right">
+                        <h2>Mikasa Ackerman</h2>
+                        <h4>Ackerman</h4>
+                        <div class="tag1">
+
+                            <p>protect</p>
+
+                            <p>mikasa x eren</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

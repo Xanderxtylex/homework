@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #f2f6ff;
+            padding: 40px;
+            padding-left: 150px;
+            width: 600px;
+            height: 650px;
+            color: #38196b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+            margin: 30px;
+        }
+
+        .background {
+            background-color: #e0e9fe;
+            height: 550px;
+            width: 500px;
+            padding-left: 50px;
+            margin-left: -70px;
+            /* margin-top: 100px; */
+            border-radius: 20px;
+            margin-bottom: -470px;
+
+        }
+
+        .body {
+            background-color: #f8faff;
+            border-radius: 30px;
+            padding: 30px;
+            padding-left: 70px;
+            height: 520px;
+            width: 450px;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+
+            margin-bottom: 100px;
+        }
+
+        .policy {
+            display: flex;
+
+        }
+
+        .group {
+            display: flex;
+        }
+
+        .comment {
+            padding: 20px;
+            font-size: 30px;
+            border: 2px solid #a3b8e8;
+        }
+
+        .submit {
+            color: #ffff;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff71a4;
+            width: 60px;
+            padding: 10px;
+        }
+
+        .cancel {
+            color: #60699a;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            width: 60px;
+            padding: 10px;
+        }
+
+        .buttons {
+            gap: 10px;
+            display: flex;
+            margin-left: 280px;
+            text-align: center;
+        }
+
+        .one {
+            width: 20px;
+        }
+
+        .two {
+            width: 20px;
+        }
+
+.smileys{
+    display: flex;
+    gap: 10px;
+}
+
+.smileys img {
+
+cursor: pointer;
+}
+.smileys img:hover {
+
+    box-shadow: 0px 0px 5px 3px rgba(241, 0, 0, 0.427);
+}
+
+.terrible{
+      height: 35px;
+border-radius: 20px;
+background-color: white;
+padding: 22px;
+}
+
+.bad{
+    height: 30px;
+border-radius: 20px;
+background-color: white;
+padding: 25px;
+
+}
+
+.okay{
+    height: 30px;
+border-radius: 20px;
+background-color: white;
+padding: 25px;
+
+}
+
+.good{
+    height: 35px;
+border-radius: 20px;
+background-color: white;
+padding: 22px;
+
+}
+
+.amazing{
+    height: 30px;
+border-radius: 20px;
+background-color: white;
+padding: 25px;
+
+}
+
+a{
+            color: #ff71a4;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+        </div>
+
+        <div class="body">
+            <div class="top">
+                <h1>Give feedback</h1>
+                <h3>What do you think of the issue seearch experience
+                    <br>
+                    within Jira projects?
+                    </h4>
+            </div>
+            <div class="smileys">
+                <img src="emotion-sad-svgrepo-com.svg" alt="terrible" class="terrible">
+                <img src="sad-svgrepo-com.svg" alt="bad" class="bad">
+                <img src="straight-svgrepo-com.svg" alt="okay" class="okay">
+                <img src="bx-smile (1).svg" alt="good" class="good">
+                <img src="smile-svgrepo-com.svg" alt="amazing" class="amazing">
+            </div>
+            <p>What are the main reasons for your rating?</p>
+            <input type="text" placeholder="Comment" class="comment">
+            <div class="check-box">
+                <div class="policy">
+                    <input type="radio" class="one">
+                    <p>
+                        I may be contacted about this feedback.
+                        <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+                <div class="group">
+                    <input type="radio" class="two">
+                    <p>
+                        I'd like to help improve by joining the <a href="#">Research Group</a>.
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button class="submit">Submit</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
